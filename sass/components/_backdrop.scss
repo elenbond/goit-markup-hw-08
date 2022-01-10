@@ -10,6 +10,19 @@
     transition-property: opacity;
     transition-duration: getAnimation('duration');
     transition-timing-function: getAnimation('timing-function');
+    overflow-y: scroll;
+
+    // @media screen and (max-width: 480px) {
+        
+    //     padding: 93px 15px;
+    //     overflow-y: scroll;
+    // }
+    // @media screen and (min-width: 480px) {
+        
+    //     // height: 100%;
+    //     padding: 93px 15px;
+    //     overflow-y: scroll;
+    // }
 }
 .is-hidden {
     visibility: hidden;

@@ -107,4 +107,39 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    visibility: visible;
+    
+    
+    
+    & .site-nav__icon--cross {
+        display: none;
+    }
+
+    &.is-open .site-nav__icon--cross {
+        display: block;
+    }
+    &.is-open .site-nav__icon--menu {
+        display: none;
+    }
+    @media screen and (max-width: 767px) {
+        visibility: visible;
+        z-index: 2;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 }
+// @media screen and (min-width: 480px) and (max-width: 767px) {
+    
+// }
+// @media screen and (min-width: 768px) {
+    
+// }

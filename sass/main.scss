@@ -19,10 +19,17 @@
 @import 'components/ftr-networks';
 @import 'components/backdrop';
 @import 'components/modal';
+@import 'components/menu';
 
 body {
     background-color: getColor('background');
     color: getColor('primary-text');
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
+}
+body.modal-open {
+    overflow: hidden;
+}
+.menu.is-open body {
+    overflow-y: scroll;
 }

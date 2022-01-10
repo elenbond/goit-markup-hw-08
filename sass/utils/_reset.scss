@@ -21,10 +21,15 @@ address {
   font-style: normal;
 }
 .site-nav__list,
+.menu-nav__list,
+.menu-contacts__list,
 .features,
 .photos__list,
 .team,
 .button__list,
 .page-footer__contacts {
   list-style-type: none;
+}
+a {
+  text-decoration: none;
 }
