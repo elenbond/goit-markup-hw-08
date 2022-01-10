@@ -75,6 +75,10 @@
             letter-spacing: 0.02em;
             color: getColor('accent');
             text-decoration: none;
+
+            &:hover {
+                color: getColor('accent-dark');
+            }
         }
         
     }
@@ -114,6 +118,7 @@
         transition-timing-function: getAnimation('timing-function');
 
         &:hover, &:focus {
+            color: getColor('accent-dark');
             color: getColor('box-shadow');
         }
     }

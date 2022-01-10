@@ -9,15 +9,30 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
   @media screen and (min-device-pixel-ratio: 2), 
+  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/hero-p@2x.jpg);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(../images/hero-p@2x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 3), 
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)), 
+      url(../images/hero-p@3x.jpg);
   }
 
   &__title {

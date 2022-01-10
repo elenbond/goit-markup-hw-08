@@ -232,6 +232,10 @@
         margin-left: 3px;
         text-decoration-line: underline;
         color: getColor('accent');
+        
+        &:hover {
+            color: getColor('accent-dark');
+        }
     }
 }
 
