@@ -26,15 +26,15 @@
           <a href="./index.html" class="logo">
             Web<span class="logo__text">Studio</span>
           </a>
-          <button type="button" class="button__menu" 
-          aria-expanded="false" data-menu-button>
+          <button type="button" class="button__menu js-open-menu js-close-menu" 
+          aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
             <svg height="40" width="40"
             aria-label="Переключатель мобильного меню">
               <use class="site-nav__icon--menu" href="./images/icons.svg#icon-menu"></use>
               <use class="site-nav__icon--cross" href="./images/icons.svg#icon-cross"></use>
             </svg>
           </button>
-          <div class="menu" data-menu>
+          <div class="menu js-menu-container" id="mobile-menu" data-menu>
             <div class="menu-nav">
               <ul class="menu-nav__list">
                 <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link menu-nav__link--current">Студия</a></li>
@@ -133,15 +133,17 @@
                 <label class="modal__label">Комментарий
                   <textarea name="comment" rows="10" placeholder="Введите текст" class="modal__input modal__input--coment"></textarea>
                 </label>
-                <div class="terms">
-                  <label class="terms__paragraphe">
-                    <input type="checkbox"  class="terms__checkbox"/>
+                <!-- <div class="terms"> -->
+                  <label class="terms">
+                    <input type="checkbox" class="terms__checkbox"/>
                     <svg class="terms__icon--check" width="11" height="8">
                       <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                    Соглашаюсь с рассылкой и принимаю <a href="#" class="terms__link">Условия договора</a> 
+                    <span class="terms__paragraphe">Соглашаюсь с рассылкой и принимаю 
+                      <a href="#" class="terms__link">Условия договора</a></span>
+                     
                   </label>
-                </div>
+                <!-- </div> -->
                 <button type="submit" class="button button--active follow__button button__modal">Отправить</button>
               </form>
             </div>
@@ -535,6 +537,12 @@
       </div>
       
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

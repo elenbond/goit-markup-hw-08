@@ -503,8 +503,6 @@ a {
 
 .contacts {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style-type: none;
@@ -526,6 +524,8 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 
@@ -541,6 +541,8 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -584,9 +586,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
     padding: 0;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -685,6 +684,7 @@ a {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
+    max-width: 480px;
   }
 }
 
@@ -692,13 +692,15 @@ a {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+    max-width: 768px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+    max-width: 1600px;
   }
 }
 
@@ -1878,7 +1880,6 @@ a {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 100%;
   }
 }
 
@@ -2107,14 +2108,35 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
   margin-top: 20px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 480px) {
+  .terms {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .terms {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.terms__paragpaphe {
+  display: inline-block;
 }
 
 .terms__checkbox {
@@ -2128,37 +2150,7 @@ a {
   overflow: hidden;
 }
 
-.terms__paragraphe, .terms__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-@media screen and (max-width: 480px), (min-width: 480px) {
-  .terms__paragraphe, .terms__link {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .terms__paragraphe, .terms__link {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
-
 .terms__link {
-  margin-left: 3px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
@@ -2168,11 +2160,25 @@ a {
   color: #188CE8;
 }
 
+@media screen and (max-width: 480px), (min-width: 480px) {
+  .terms__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .terms__icon--check {
   display: inline-block;
   width: 16px;
   height: 15px;
-  padding: 2px 1px 2px 2px;
+  padding: 2px 2px 2px 2px;
   margin-right: 7px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2197,6 +2203,15 @@ a {
   fill: #ffffff;
   background-color: #2196f3;
   border: none;
+}
+
+@media screen and (max-width: 480px) {
+  .terms__icon--check {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 0;
+  }
 }
 
 .site-nav__icon--menu {
@@ -2262,7 +2277,6 @@ a {
 }
 
 .menu-contacts {
-  display: block;
   margin-top: 306px;
 }
 

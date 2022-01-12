@@ -8,6 +8,7 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/hero-mobile.jpg);
+    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -15,13 +16,15 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/hero-tablet.jpg);
+    max-width: 768px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/hero-desktop.jpg);
+    max-width: 1600px;
   }
   background-repeat: no-repeat;
   background-position: center;
