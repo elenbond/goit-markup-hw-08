@@ -18,7 +18,7 @@
 .follow__email {
     display: flex;
     align-items: center;
-    width: 358px;
+    // width: 358px;
     height: 50px;
     padding: 15px 16px;
     will-change: transform;
@@ -36,12 +36,16 @@
     transition-duration: getAnimation('duration');
     transition-timing-function: getAnimation('timing-function');
 
-    @media screen and (max-width: 480px), (min-width: 480px) {
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) {
       width: 450px;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 480px) {
-      width: 358px;
+    @media screen and (min-width: 768px) {
+      width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
@@ -56,5 +60,5 @@
 }
 
 .follow--site__icon {
-    margin-left: 10px;
+  margin-left: 10px;
 }

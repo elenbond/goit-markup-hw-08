@@ -46,20 +46,18 @@
 .features__item {
     text-align: start;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px), (min-width: 480px) {
         width: 100%;
         margin-top: 30px;
     }
-    
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px)/2);
-        margin: 15px;
-    }
-    
     &:first-child {
         @media screen and (max-width: 767px) {
             margin-top: 0;
         }
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px)/2);
+        margin: 15px;
     }
     @media screen and (min-width: 1200px) {
         width: calc((100% - 4 * 30px)/4);

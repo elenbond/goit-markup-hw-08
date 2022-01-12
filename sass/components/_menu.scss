@@ -43,6 +43,10 @@
         &:hover, &:focus {
             color: getColor('accent');
         }
+
+        &--current {
+            color: getColor('accent');
+        }
     }
 }
 .menu-contacts {
