@@ -3,8 +3,6 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     list-style-type: none;
-    // display: flex;
-    // justify-content: flex-end;
 
     @media screen and (max-width: 480px), (min-width: 480px) {
         display: none;
@@ -23,7 +21,6 @@
         font-size: 14px;
         line-height: 1.14;
     }
-
     &__icon {
         fill: currentColor;
         margin-right: 10px;
@@ -43,25 +40,30 @@
     @media screen and (min-width: 768px) {
         display: inline-flex;
         padding: 0;
-        padding-top: 5px;
+        padding-top: 21px;
         padding-bottom: 5px;
+        .contacts__item:last-child & {
+            padding-top: 5px;
+            padding-bottom: 21px;
+        }
     }
     @media screen and (min-width: 1200px) {
         display: flex;
         padding: 0;
         padding-top: 32px;
         padding-bottom: 32px;
+        .contacts__item:last-child & {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
-
     &:hover,
     &:focus {
         color: getColor('accent');
     }
 }
-  
 .contacts__item {
     display: flex;
-    // align-items: flex-end;
     margin-right: 50px;
 
     @media screen and (min-width: 768px) {
@@ -72,7 +74,6 @@
     @media screen and (min-width: 1200px) {
         margin-right: 50px;
     }
-
     &:last-child {
         margin-right: 0;
     }
