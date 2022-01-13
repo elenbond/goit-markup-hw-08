@@ -2382,8 +2382,4 @@ body {
 body.modal-open {
   overflow: hidden;
 }
-
-.menu.is-open body {
-  overflow-y: hidden;
-}
 /*# sourceMappingURL=main.css.map */
